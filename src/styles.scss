@@ -1,0 +1,165 @@
+body {
+  background: #d1d4d0;
+  font-family: Montserrat, Helvetica, sans-serif;
+  color: #f3f3f3;
+  letter-spacing: 1px;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+  .links {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 20px;
+    color: #0e1b1e;
+
+    .link:link,
+    .link:visited {
+      padding: 5px 10px;
+      font-weight: 100;
+      margin: 1rem;
+      color: #0e1b1e;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      font-weight: 500;
+
+      &.active {
+        font-weight: 500;
+      }
+    }
+
+    .link:hover,
+    .link:active {
+      border-bottom: 1px solid #0e1b1e;
+    }
+  }
+}
+
+#titulo {
+  color: #fff;
+  background-color:#0e1b1e
+}
+
+#descricao {
+  padding-bottom: 3rem;
+  padding-right: 10rem;
+  font-size: 1rem;
+}
+
+.campos {
+  text-align: center;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  color: #0e1b1e;;
+}
+td {
+  font-size: 1.1rem;
+}
+
+.main-content {
+  width: 80%;
+  margin: auto auto 100px auto;
+}
+
+.main-form {
+  color: #222222;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+}
+
+.input-control {
+  border: 1px solid #ccc;
+  color: #555555;
+  background-color: #fff;
+  height: 46px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(23, 24, 24, 0.6);
+    border: 1px solid #cecece;
+  }
+}
+
+.input-control-description {
+  border: 1px solid #ccc;
+  color: #555555;
+  background-color: #fff;
+  height: 90px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 0;
+  display: block;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(23, 24, 24, 0.6);
+    border: 1px solid #cecece;
+  }
+}
+
+button {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  header {
+    .links {
+      a {
+        font-size: 1.2rem;
+      }
+
+      .link:link,
+      .link:visited {
+        margin: unset;
+      }
+    }
+  }
+
+  .main-form {
+    width: 100%;
+  }
+}
