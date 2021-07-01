@@ -81,7 +81,7 @@ const AnnouncementForm = (props) => {
               </Form.Row>
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridPrice">
-                      <Form.Label>Description</Form.Label>
+                      <Form.Label>Descrição</Form.Label>
                       <Form.Control required
                           autoComplete="off"
                           type="test" as="textarea" name="descricao"
